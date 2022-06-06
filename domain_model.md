@@ -26,15 +26,31 @@ RETURN: Error if it doesn't exist
 
 6
 Seeing the price of the bagel before adding it to the basket
-METHOD: getBagelPrice(bagel, price)
+METHOD: getBagelPrice(bagel)
 RETURN: Shows the price of the bagel
 
 7
 Add more than one type of Bagel to the basket at once
-METHOD: addABagel(bagel, price, quantity)
+METHOD: addABagel(bagel, quantity)
+RETURN: the basket with the updated quantities
 
 8
 Total Sum of the basket
 METHOD: checkOut()
 RETURN: total of the basket
+
+EXTENSIONS:
+
+1
+Given a discount by quantity, calculate it at cheackout
+METHOD: checkOut()
+
+2
+Give a receipt with all the items and the quantity in the basket and the total sum.
+METHOD: receipt()
+RETURN: A receipt
+
+3
+Show how much you saved in the receipt
+METHOD: receipt() and checkOut()
 ```
